@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Up or Shape Out Lab</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="css/images/favicon.ico"/>
+</head>
+<body>
+
+    <div class="bg-light" id="container">
+
+        <form class="col-sm-12" id="shape-form">
+            <div class='btn-header text-secondary text-center'>
+                <h1 class="pt-4">Add a shape!</h1>
+            </div><br>
+            <div class="row col-sm-12 d-flex justify-content-center">
+                <div class="col-sm-5 bg-secondary text-center m-1 shadow-lg rounded" style="height: 130px;">
+                    <label class="mt-5 text-white" for="recHeight">Height:</label>
+                    <input class="mt-5" type="text" id="rectangle-height" name="recHeight">
+                    <label class="mt-5 text-white" for="recWidth">Width:</label>
+                    <input class="mt-5" ty4pe="text" id="rectangle-width" name="recWidth">
+                    <input class="mt-5" id="rec-btn" name="form" type="submit" value="Add a rectangle!">                    
+                </div>
+                <div class="col-sm-5 bg-secondary text-center m-1 shadow-lg rounded">
+                    <label class="mt-5 text-white" for="sqSide">Sides:</label>
+                    <input class="mt-5" type="text" id="square-sides" name="sqSide">
+                    <input class="mt-5" id="square-btn" name="form" type="submit" value="Add a square!">                    
+                </div>
+                <div class="col-sm-5 bg-secondary text-center m-1 shadow-lg rounded" style="height: 130px;">
+                    <label class="mt-5 text-white" for="circRadius">Radius:</label>
+                    <input class= "mt-5" type="text" id="circle-radius" name="circRadius">
+                    <input class="mt-5" id="circle-btn" name="form" type="submit" value="Add a circle!">                    
+                </div>
+                <div class="col-sm-5 bg-secondary text-center m-1 shadow-lg rounded">
+                    <label class="mt-5 text-white" for="triHeight">Height:</label>
+                    <input class="mt-5" type="text" id="triangle-height" name="triHeight">
+                    <input class="mt-5" id="tri-btn" name="form" type="submit" value="Add an isoceles right triangle!">                    
+                </div>
+            </div>   
+        </form>
+        
+        <div class="d-flex justify-content-center row col-sm-12">
+            <div class="col-sm-5 d-flex justify-content-center mt-3 mb-3">
+                <div class="bg-primary mt-3 mb-3 shadow-lg rounded" id="shapeBoard" style="height: 600px; width: 600px;"></div>
+            </div>
+            <div class="col-sm-5 d-flex justify-content-center mt-3 mb-3">
+                <div class="bg-info mt-3 mb-3 shadow-lg rounded" style="height: 600px; width: 400px;">
+                    <div>
+                        <div class="m-3">
+                            <h2 class="text-dark text-center bg-info mt-1 p-1 shadow rounded">Dimensions:</h2>
+                            <h3 class="bg-white text-dark mt-5 p-2 shadow rounded" id="shapeName">Shape: </h3>
+                            <h3 class="bg-white text-dark mt-4 p-2 shadow rounded" id="shapeHeight">Height: </h3>
+                            <h3 class="bg-white text-dark mt-4 p-2 shadow rounded" id="shapeWidth">Width: </h3>
+                            <h3 class="bg-white text-dark mt-4 p-2 shadow rounded" id="shapeRadius">Radius: </h3>
+                            <h3 class="bg-white text-dark mt-4 p-2 shadow rounded" id="shapeArea">Area: </h3>
+                            <h3 class="bg-white text-dark mt-4 p-2 shadow rounded" id="shapePerimeter">Perimeter: </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

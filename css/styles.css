@@ -1,0 +1,52 @@
+.btn-header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rectangle {
+    position: absolute;
+    background-color: green;
+}
+
+.rectangle:hover {
+    cursor: pointer;
+}
+
+.square {
+    position: absolute;
+    background-color: red;
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+.circle {
+    background-color: purple;
+    border-radius: 50%;
+    position: absolute; 
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-color: yellow;
+    border-style: solid;
+    border-left: 0 solid transparent;
+    border-top: 0 solid transparent;
+}
+
+.triangle:hover {
+    cursor: pointer;
+}
+
+#shapeBoard {
+    display: inline-block;
+    position: relative;
+}
